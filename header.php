@@ -1,6 +1,18 @@
-<html>
+<?php
+/**
+ * Header file for the Twenty Twenty WordPress default theme.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty
+ * @since Twenty Twenty 1.0
+ */
+
+?><!DOCTYPE html>
+
 <head>
-<title>Tutorial theme</title>
+<title>vvrc-wp</title>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery.js'; ?>">
 </script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery-ui.min.js'; ?>">
@@ -11,12 +23,19 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 
+<!-- this is the start of the header up to section just before the body part -->
+
 <body>
-
-
-
 <div id="ttr_header" class="jumbotron">
-<h1>HEADER</h1>
+<h1>Menu</h1>
 </div>
-<div class="container">
 
+<div class="menu">
+    
+<?php 
+    wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
+?>
+
+</div>
+
+<div class="container">
