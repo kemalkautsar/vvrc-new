@@ -4,7 +4,13 @@
 <h1>FOOTER</h1>
 
 <div class="menu-footer">
-    <span>Logo</logo>
+    <span>
+        <?php    
+            if ( function_exists( 'the_custom_logo' ) ) {
+                the_custom_logo();
+            }
+        ?>
+    </logo>
     <?php 
         wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );
     ?>
