@@ -4,6 +4,7 @@
 <h1>FOOTER</h1>
 
 <div class="menu-footer">
+    <span>Logo</logo>
     <?php 
         wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );
     ?>

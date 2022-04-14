@@ -32,9 +32,19 @@
 
 <div class="menu">
     
+<span>
+    <?php    
+        if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        }
+    ?>
+</span>
+
 <?php 
     wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
 ?>
+
+<span>Login</span>
 
 </div>
 
