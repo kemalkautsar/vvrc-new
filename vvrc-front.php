@@ -23,7 +23,7 @@
     <div class="col-xs-12 col-lg-6">
       Column kanan
       
-        <object type="image/svg+xml" data="../images/illustration-hero.svg">
+        <object type="image/svg+xml" data="<?php bloginfo('template_url')?>/images/illustration-hero.svg">
             Kiwi Logo <!-- fallback image in CSS -->
         </object>
     </div>
