@@ -7,6 +7,9 @@
 * @since vvrc-theme 1.0
 */?>
 
+<script rel="stylesheet" src="<?php bloginfo('template_url')?>/vvrc-front-style.css">
+</script>
+
 <?php get_header(); ?>
 
 
